@@ -1,0 +1,79 @@
+@font-face {
+  font-family: mukta;
+  src: url(../fonts/Mukta-Regular.ttf);
+}
+:root{
+  --primary-color : #009879;
+  --secondary-color : #57CFAD;
+  --tertiary-color :  rgba(0,0,0,0.1);
+  --primary-text-color : #0d0c22;
+  --secondary-text-color: #6E6D7A;
+  --tertiary-text-color: #6e6d93;  
+  --icon-color: #9e9ea7;
+  --grey-color: #f3f3f4;
+  --white-color: #FFFFFF;
+  --lar-font : 40px;
+  --mid-font :30px; 
+  --e-mid-font : 24px;
+  --sml-font : 18px;
+  --e-sml-font : 16px;
+  --primary-font-weight : 700;
+  --secondary-font-weight : 500;
+  --tertiary-font-weight : 400;
+  --small-padding : 8px;
+  --mid-padding : 16px;
+  --large-padding : 24px;
+  --border-radius : 6px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.btn-primary {
+  font-size: var(--sml-font);
+  color: var(--white-color);
+  height: 40px;
+  padding: 10px 16px;
+  transition: color 200ms ease;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  background: var(--primary-color);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  appearance: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.btn-primary:hover{
+  background: var(--secondary-color);
+}
+
+.btn-secondary{
+  font-size: var(--sml-font);
+  color: var(--primary-text-color);
+  height: 40px;
+  padding: 10px 16px;
+  transition: color 200ms ease;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  background: var(--grey-color);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  appearance: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;   
+}
+
+.btn-secondary:hover{
+  background: var(--icon-color);
+}

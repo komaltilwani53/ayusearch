@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+div.title{
+    background-color: rgb(12, 35, 85);
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    /* margin-bottom: 10px; */
+}
+.selected-name{
+    border-bottom: 1px solid black;
+    padding-left: 25px;
+    color: rgb(12, 35, 85);
+    font-weight: 700;
+    font-size: 20px;
+}
+.annot{
+    height: auto;
+    /* background-color: rgb(247, 248, 248); */
+
+}
+.annot table{
+    /* border: 1px solid rgb(12, 35, 85); */
+    display: block;
+    justify-content: center;
+    border-collapse: collapse;
+    /* width: 90vw; */
+    margin: 20px 100px;
+}
+.annot .col{
+    position: sticky;
+    z-index: 9999;
+    /* top: 0; */
+}
+.annot .col td{
+    /* background-color: white; */
+    min-width: 200px;
+    font-size: 18px;
+    padding: 5px 0;
+    color: rgb(12, 35, 85);
+    font-weight: 700;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    text-align: center;
+}
+.annot .value td{
+    /* background-color: rgb(247, 248, 248); */
+    min-width: 200px;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 5px;
+    border-bottom:1px solid rgb(12, 35, 85);
+    border-right:1px solid rgb(12, 35, 85);
+    border-radius: 5px;
+    /* text-align: center; */
+    color: rgb(12, 35, 85);
+}
+.annot  tr:nth-child(even){
+    background-color: rgb(246, 252, 252);
+
+}
+td a{
+    text-decoration: none;
+    color: darkmagenta;
+    cursor: pointer;
+}
+td a:visited{
+    color: darkmagenta;
+}
+.selected-name .color-select{
+    color :rgb(28, 67, 145) !important;
+}

@@ -1,0 +1,338 @@
+@import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
+.col-0 {width: 0px;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* background-color: ; */
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+}
+.container .sidebar{
+    height: 700px;
+    /* display: none; */
+    background-color: #84c4aa;
+    border: 2px solid white;
+    
+}
+.container .menu{
+    height: 700px;
+    background-color: white;
+}
+
+.container .sidebar header{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 10%;
+}
+
+.container .sidebar ul{
+    width: 100%;
+  
+}
+.container .sidebar ul li {
+    text-align: center;
+    padding: 10px;
+    
+}
+.container .sidebar ul li a{
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.container .sidebar ul li a:hover{
+    color: #17b978;
+    font-size: 30px;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid #84c4aa;
+}
+
+.container .menu .main-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: rgb(12, 35, 85);
+    margin: auto;
+    /* border: 2px solid white; */
+    padding-top: 30px;
+
+}
+.container .menu form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selected-name{
+    /* padding-left: 25px; */
+    color: white;
+    font-weight: 400;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.container .menu form select{
+    padding: 7px; 
+    width: 300px;
+    background-color: white;
+    margin: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.container .menu form select option{
+    color: rgb(12, 35, 85);
+}
+.container .menu form select option:hover{
+    box-shadow: 0 0 10px 100px #000 inset;
+}
+.container .menu .btn button{
+    width: 135px;
+    height: 35px;
+    margin: 1%;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: white;
+    color:  rgb(12, 35, 85);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(12, 35, 85);
+    transition-duration: 0.4s;
+}
+.container .menu .btn button:hover{
+    background-color:rgb(12, 35, 85) ;
+    color: white;
+    border: 1px solid white;
+  
+}
+
+.container .menu .box-ans{
+    background-color: white;
+    /* height: 450px; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.container .menu .box-ans .box-a .scroll{
+    /* background-color: #81c999; */
+    /* border-radius: 5px; */
+    border: 4px solid rgb(12, 35, 85);
+    /* overflow: scroll; */
+    min-height: 50px;
+    /* border-bottom-left-radius: 5px; */
+}
+
+.container .menu .box-same{
+    background-color: white;
+    min-height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    /* overflow: hidden; */
+    /* width: 100%; */
+}
+
+.container .menu .box-same .box-s{
+    background-color: #84c4aa;
+    margin: 5px ;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/* .container .menu .box-same .box-s */
+ .id-title{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+    color: white;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: rgb(12, 35, 85);
+    /* position: fixed; */
+}
+.highlight{
+    color: red;
+}
+
+.box-ans .box-aa,
+.box-ans .box-ab,
+.box-ans .box-ac{
+   display: block;
+   align-items: center;
+   justify-content: center;
+   margin-left: 8px;
+}
+/* .container .menu .box-same .box-s ul */
+.box-ans .box-aa ul li,
+.box-ans .box-ab ul li,
+.box-ans .box-ac ul li{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(12, 35, 85);
+    border-bottom:1px solid rgb(12, 35, 85);
+    border-radius: 5px;
+ }
+ .box-ans .box-aa ul li a,
+.box-ans .box-ab ul li a{
+    color:darkmagenta;
+}
+ .box-ans .box-aa ul li a:visited,
+.box-ans .box-ab ul li a:visited{
+    color:darkmagenta;
+}
+ .container .menu .box-ans .box-aa ul li{
+    font-weight: 700;
+    color: blanchedalmond;
+    /* position: relative; */
+ }
+
+ .container .menu .box-ans .box-aa ul li .tooltiptext{
+    visibility: hidden;
+    width: 300px;
+    font-size: 20px;
+    background-color: #84c4aa;
+    color:blue;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-weight: 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    /* transition: 2s; */
+    transition-delay: 0.5s;
+
+ }
+ .container .menu .box-ans .box-aa ul li:hover .tooltiptext {
+    visibility: visible;
+    transform: translateX(-90%) translateY(-90%);
+  }
+
+ .container .menu form ul .namelist{
+    display: inline-block;
+ }
+ .container .menu .title{
+     background-color: rgb(12, 35, 85);
+     height: 34px;
+ }
+ .container .menu .title p{
+     text-align: center;
+     font-size: 25px;
+     color: lightgreen;
+ }
+
+.show-List{
+    list-style-type: square;
+}
+.title a{
+    color: rgb(27, 219, 43);
+}
+.other-options{
+    margin-top: 70px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+.other-options li{
+    font-size: 20px;
+    margin: 15px 0;
+    color: rgb(12, 35, 85);
+}
+
+.other-options li button{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(38, 65, 122);
+    color: white;
+    cursor: pointer;
+}
+
+.annot table{
+    /* border: 1px solid rgb(12, 35, 85); */
+    display: block;
+    justify-content: center;
+    border-collapse: collapse;
+    /* width: 90vw; */
+    margin: 20px;
+}
+
+.annot .header td{
+    /* background-color: white; */
+    max-width: 600px;
+    min-width: 110px;
+    font-size: 18px;
+    padding: 5px 0;
+    color: rgb(12, 35, 85);
+    font-weight: 700;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    text-align: center;
+}
+.annot .value td{
+    /* background-color: rgb(247, 248, 248); */
+    max-width: 600px;
+    min-width: 110px;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 5px 0;
+    border-bottom:1px solid rgb(12, 35, 85);
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(12, 35, 85);
+}
+.annot  tr:nth-child(even){
+    background-color: rgb(246, 252, 252);
+
+}
+.hide{
+    display: none;
+}
+
+.show{
+    display: unset;
+}
+.canonical-smiles-value{
+    font-weight: 400;
+    color: rgb(12, 35, 85);
+}
+.canonical-smiles{
+    font-weight: 700;
+    color: rgb(12, 35, 85);
+}
+.selected-name .color-select{
+    color :rgb(167, 178, 212)!important;
+}
+.compound{
+    max-width: 50px;
+}

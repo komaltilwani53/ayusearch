@@ -1,0 +1,107 @@
+@import url(./variables.css);
+
+*{   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'mukta', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body{
+    color: var(--secondary-text-color);
+}
+
+
+div.title{
+    box-shadow: 0 1px 10px 0 var(--icon-color);
+    background-color: var(--white-color);
+}
+.title h1{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: var(--lar-font);
+}
+
+.sub-header{
+    width: 95%;
+    display: flex;
+    margin: var(--mid-padding) auto;
+    justify-content: space-between;
+    font-size: var(--sml-font);
+    color: var(--secondary-text-color);
+}
+
+.selected-name, .reference-title{
+    font-weight: var(--primary-font-weight);
+}
+
+.selected-name .color-select{
+    color: var(--primary-color);
+}
+
+.table-info{
+    width: 32%;
+}
+
+.content{
+    font-size: var(--e-sml-font);
+    border-collapse: collapse;
+    color: var(--primary-text-color);
+    text-align: center;
+    width: 96%;
+    margin: auto;
+}
+
+.content .col{
+    top: 0px;
+    position: sticky;
+    z-index: 999;
+    background-color: var(--primary-color);
+    color: var(--white-color); 
+}
+
+.content .value:nth-child(odd){
+    background-color: var(--grey-color);
+}
+
+.content .value:last-child{
+    border-bottom: var(--small-padding) solid var(--primary-color);
+}
+
+.content td{
+    max-width: 250px;
+    padding: 2px 2px; 
+}
+
+.content td a{
+    color: var(--primary-text-color);
+}
+
+.content  td{
+    padding: 2px 2px;
+}
+
+.reference{
+    font-size: var(--sml-font);
+    border-collapse: collapse;
+    width: 96%;
+    margin: var(--mid-padding) auto;
+}
+
+.reference .col2 tr,td{
+    padding: 2px 8px;
+}
+
+.green-color{
+    color: rgb(155, 7, 157) !important;
+}
+.blue-color{
+    color: blue !important;
+}
+
+.myul{
+    font-size: 20px;
+    list-style: decimal inside;
+    text-align:left;
+}

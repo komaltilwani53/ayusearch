@@ -1,0 +1,142 @@
+@import url(./variables.css);
+
+*{
+    box-sizing: border-box;
+    /* background-color: rgb(247, 248, 248); */
+    font-family: 'mukta', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+div.title{
+    /* height: 15vh; */
+    /* width: 100vw; */
+    /* background-color: rgb(247, 248, 248); */
+    /* border-bottom: 1px solid rgb(12, 35, 85); */
+    box-shadow: 0 1px 3px 0 var(--icon-color);
+    position: sticky;
+    top: 0;
+    background-color: var(--white-color);
+}
+.title h1{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: var(--lar-font);
+}
+.sub-header{
+    border-bottom: 1px solid rgb(12, 35, 85);
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selected-name{
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(12, 35, 85);
+}
+.table-info{
+    width: 300px;
+    margin-right: 100px;
+    text-align: justify;
+    text-justify:inter-word;
+    color: coral;
+    font-size: 20px;
+}
+.annot{
+    height: auto;
+    /* background-color: rgb(247, 248, 248); */
+
+}
+.annot table{
+    /* border: 1px solid rgb(12, 35, 85); */
+    display: block;
+    justify-content: center;
+    border-collapse: collapse;
+    background-color: rgb(25, 24, 24);
+    /* width: 90vw; 
+    margin: 10px auto 0 30px;*/
+}
+.annot .col{
+    position: sticky;
+    z-index: 9999;
+    /* top: 0; */
+}
+.annot .col td{
+    /* background-color: white; */
+    /* background-color: rgb(25, 24, 24); */
+    max-width: 250px;
+    font-size: 18px;
+    padding: 5px 0;
+    color: rgb(12, 35, 85);
+    font-weight: 700;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    text-align: center;
+}
+.annot .value td{
+    /* background-color: rgb(247, 248, 248); */
+    max-width: 250px;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 5px 0; 
+    border-bottom:1px solid rgb(12, 35, 85);
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(12, 35, 85);
+}
+.annot .value1 td{
+    min-width: 160px;
+}
+.annot .col1 td{
+    min-width: 160px;
+}
+.annot .value2 td{
+    max-width: 975px !important;
+    min-width: 100px !important;
+}
+.annot .col2 td{
+    max-width: 975px !important;
+    min-width: 100px !important;
+}
+.reference-title{
+    margin-top: 50px;
+    font-size: 40px;
+    color:rgb(12, 35, 85);
+    text-align: center;
+}
+.reference table{
+    margin-bottom: 50px;
+    margin-left: 90px;
+}
+.annot  tr:nth-child(even){
+    background-color: rgb(246, 252, 252);
+}
+.green-color{
+    color: green !important;
+}
+.blue-color{
+    color: blue !important;
+}
+td a{
+    text-decoration: none;
+    color: darkmagenta;
+    cursor: pointer;
+}
+td a:visited{
+    color: darkmagenta;
+}
+
+.top-border{
+    border-top: none !important;
+    border-bottom: none !important;
+    border-top: 1px solid rgb(12, 35, 85) !important;
+}
+.hide-bottom-border{
+    border-top: none !important;
+    border-bottom: none !important;
+}
+.selected-name .color-select{
+    color :rgb(28, 67, 145) !important;
+}
